@@ -92,7 +92,8 @@
         var $UV = document.getElementById("uv");
 
         function resize() {
-          $UV.setAttribute("style", "width:" + window.innerWidth + "px; height:" + window.innerHeight + "px;");
+          $UV.style.width = window.innerWidth + "px";
+          $UV.style.height = window.innerHeight + "px";
         }
 
         addEventListener("resize", function() {
